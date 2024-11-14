@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import logo from './imgs/logo.svg';
+import logo from '/assets/imgs/logo.svg';
 import './NavBar.css';
 import { NavDropdown, Offcanvas, Button } from 'react-bootstrap';
 import { IoIosSearch } from "react-icons/io";

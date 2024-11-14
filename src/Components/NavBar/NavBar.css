@@ -47,7 +47,7 @@ nav#second-navbar .right .btn-side {
     clip-path: polygon(14% 0, 48% 0, 100% 0, 100% 100%, 49% 100%, 14% 100%, 0 47%);
 }
 nav ul{
-    gap: 20px;
+    gap: 12px;
 }
 .list li:hover{
     color: var(--main-color); 
@@ -61,20 +61,6 @@ nav#second-navbar .nav-btn {
 nav#second-navbar .nav-btn span {
     text-transform: capitalize !important;
 }
-
-/* .nav-btn>svg {
-    width: 18px;
-    margin-left: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.nav-btn:hover svg {
-    transform: translateX(5px);
-}
-
-.nav-btn:active {
-    transform: scale(0.95);
-} */
 
 .toggle-nav-btn {
     display: none !important;
@@ -173,9 +159,6 @@ div.offcanvas {
     nav img {
         width: 150px;
     }
-    nav ul {
-        gap: 15px !important;
-    }
 }
 
 @media (max-width: 1099px) {
@@ -190,6 +173,9 @@ div.offcanvas {
     .nav-btn {
         padding: 8px 16px;
         font-size: 10px;
+    }
+    nav ul{
+        gap: 10px;
     }
 }
 
