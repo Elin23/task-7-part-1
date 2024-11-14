@@ -1,0 +1,29 @@
+.form-label{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+form input,
+form textarea{
+    border: 1px solid var(--light-blue-border) !important;
+}
+form input:focus,
+form textarea:focus{
+    box-shadow: none !important;
+}
+
+form textarea {
+    overflow-y: scroll !important;
+}
+form textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+form textarea::-webkit-scrollbar-track {
+    background: var(--light-blue-border);
+    border-radius: 4px;
+}
+
+form textarea::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 4px;
+}

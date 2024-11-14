@@ -1,0 +1,44 @@
+.nav-btn {
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.nav-btn.main{
+    background: var(--main-color);
+    color: var(--color-white);
+}
+.nav-btn.orange{
+    background-color: var(--btn-orange-color);
+    color: var(--color-white);
+}
+.nav-btn.light{
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+.nav-btn>svg {
+    width: 18px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-btn:hover svg {
+    transform: translateX(5px);
+}
+
+.nav-btn:active {
+    transform: scale(0.95);
+}
+@media (min-width: 993px) {
+    .nav-btn.wider{
+        width: 200px;
+    }
+    .nav-btn.wide{
+        width: 170px;
+    }
+}

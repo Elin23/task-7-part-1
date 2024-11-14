@@ -1,0 +1,112 @@
+.plane-card{
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--light-blue-border);
+    transition: var(--main-transition);
+    margin-top: 40px;
+    min-width: 320px;
+}
+.plane-card-header{
+    padding: 24px;
+    border-radius: 16px;
+    background: var(--main-color);
+}
+.plane-header-text h4{
+    color: var(--color-white);
+    font-family: var(--title-font);
+    font-size: 22px;
+    font-weight: 700;
+}
+.plane-card-header span{
+    color: var(--color-white);
+    font-family: var(--title-font);
+    font-size: 40px;
+    font-weight: 600;
+}
+.plane-card-header span.smaller{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    transition: var(--main-transition)
+}
+.plane-body{
+    margin: 40px 10px;
+}
+.plane-feature{
+    margin: 5px 0;
+}
+.plane-feature .feature-icon{
+    padding-right: 10px;
+}
+.plane-feature .feature-icon svg.check{
+    color: var(--main-color);
+}
+.plane-feature .feature-icon svg.xmark{
+    color: red;
+}
+.plane-body .question-mark{
+    font-size: 20px;
+}
+.plane-btn .btn-side .nav-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-white);
+    border: 1px solid var(--light-blue-border);
+    color: var(--main-color);
+    text-align: center;
+    font-weight: 700;
+    transition: var(--main-transition);
+}
+.plane-card.active .plane-card-header,
+.plane-card.active .plane-btn .btn-side .nav-btn
+{
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+.plane-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pricing-img-1{
+    position: absolute;
+    right: 10%;
+    width: 100px !important;
+    height: 50px !important;
+}
+.pricing-img-2{
+    position: absolute;
+    left: -85px;
+    bottom: 10%;
+    width: 100px;
+}
+
+@media (min-width: 810px) and (max-width: 850px) {
+    .plane-card{
+        padding: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 810px) {
+    .plane-card{
+        padding: 10px;
+    }
+}
+@media (max-width: 504px) {
+    .plane-card{
+        padding: 10px;
+    }
+    plane-header-text h4{
+        font-size: 16px;
+    }
+    .plane-card-header span{
+        font-size: 30px;
+    }
+    .plane-card-header span.smaller{
+        font-size: 12px;
+    }
+}
+@media(max-width: 470px){
+    .feature-description{
+        font-size: 12px;
+    }
+}

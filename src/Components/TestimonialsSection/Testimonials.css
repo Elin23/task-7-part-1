@@ -1,0 +1,43 @@
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+
+.testimonials-section {
+    background-color: var(--section-background-color);
+    position: relative;
+}
+
+.swiper {
+    padding-bottom: 50px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: 25% !important;
+    height: 20px;
+    margin-top: 90px;
+    background-color: var(--light-blue-border);
+    border-radius: 10px;
+}
+
+.swiper-pagination-bullet {
+    opacity: 0;
+    margin: 0 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 30% !important;
+    height: 100% !important;
+    border-radius: 10px;
+    background-color: var(--main-color) !important;
+    opacity: 1;
+}
+
+@media (max-width: 518px) {
+    .testimonials-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

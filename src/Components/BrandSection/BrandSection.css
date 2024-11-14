@@ -1,0 +1,38 @@
+.brand-title {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--title-font);
+}
+
+.brand-title::before,
+.brand-title::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    background-color: var(--light-blue-border);
+    bottom: 50%;
+}
+
+.brand-title::before {
+    left: 0;
+}
+
+.brand-title::after {
+    right: 0;
+}
+
+@media (max-width: 992px) {
+
+    .brand-title::before,
+    .brand-title::after {
+        display: none;
+    }
+}
+@media (max-width: 372px) {
+    .brand-section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,94 @@
+.card-container{
+    background-color: var(--light-blue-color);
+    padding: 20px;
+    border: 1px solid var(--light-blue-border);
+    border-radius: 30px;
+}
+.card-container .card{
+    background-color: transparent;
+    border: none;
+    margin: 0 15px;
+}
+.card-container .card .card-img{
+    border-radius: 8px;
+    border: 1px solid var(--light-blue-border);
+    background: transparent;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.4s;
+}
+.card-container h3{
+    font-family: var(--title-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    transition: all 0.4s;
+}
+.card-container p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: -2px;
+    margin-bottom: 25px;
+    color: var(--text-light-color);
+}
+.card-btn{
+    padding: 12px 30px;
+    background-color: transparent;
+    border: 1px solid var(--light-blue-border);
+    border-radius: 24px;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+}
+
+.card-container:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    transition: all 0.4s ease;
+}
+
+.card-container:hover h3 {
+    color: var(--color-white);
+}
+
+.card-container:hover p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.card-container:hover .card-img {
+    background-color: var(--color-white);
+    border-color: var(--main-color);
+}
+.card-container:hover .card-btn-text, 
+.card-container:hover .card-btn-icon{
+    color: var(--color-white);
+}
+
+.card-btn:hover {
+    background-color: var(--color-white);
+    border-color: var(--main-color);
+    transition: all 0.4s ease;
+}
+.card-btn:hover .card-btn-text, 
+.card-btn:hover .card-btn-icon{
+    color: var(--main-color);
+}
+@media (min-width: 1200px) {
+    .card-container{
+        max-width: 300px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .card-container{
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 1200px) {
+    .card-container{
+        min-width: 300px !important;
+    }
+}

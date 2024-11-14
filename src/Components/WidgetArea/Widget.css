@@ -1,0 +1,241 @@
+.widget-area {
+    background-color: var(--color-dark-blue);
+}
+.widget-item{
+    margin-top: 20px;
+}
+.widget-item img {
+    margin-bottom: 30px;
+}
+
+.widget-item p {
+    color: var(--color-white);
+    line-height: 28px;
+    margin-bottom: 30px;
+    max-width: 261px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+.social a {
+    font-size: 14px;
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    padding: 10px 12px;
+    margin: 0 3px;
+    transition: all 0.3s ease;
+}
+
+.social a:hover {
+    color: var(--main-color);
+    border-color: var(--main-color);
+    background-color: var(--color-white);
+}
+
+.widget-title {
+    position: relative;
+    color: var(--color-white);
+    font-family: var(--title-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-bottom: 15px;
+}
+
+.widget-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 61px;
+    height: 2px;
+    background: linear-gradient(250deg, rgba(255, 255, 255, 0) 0%, #FFF 100%);
+}
+
+.quick-links {
+    margin-top: 25px;
+}
+
+.quick-links li {
+    font-size: 18px;
+    color: var(--color-white);
+    margin-bottom: 15px;
+    transition: var(--main-transition);
+}
+
+.quick-links li:hover {
+    transform: translateX(10px);
+}
+
+.recent-post {
+    cursor: pointer;
+}
+
+.widget-icon {
+    font-size: 20px;
+}
+
+.post-date span {
+    color: var(--color-white);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.recent-post h6 {
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.recent-post-img:hover {
+    filter: brightness(0.8);
+}
+
+
+.email-input-container {
+    position: relative;
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    min-width: 200px;
+    max-width: 250px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+}
+.email-input-container input {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 0.625rem 70px 0.625rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    outline: none;
+}
+
+.email-input-container input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.contact-btn {
+    position: absolute;
+    width: 65px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    z-index: 10;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: var(--color-white);
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+}
+.check-box span,
+.check-box span a{
+    font-family: var(--title-font);
+}
+.checkbox-input{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--color-white);
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+.checkbox-input:checked{
+    background-image: url('../../assets/imgs/checkmark.jpg');
+    border-color: var(--main-color);
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .post-date span {
+        font-size: 12px;
+    }
+    
+    .recent-post h6 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+}
+@media (max-width: 991px) {
+    .widget-item {
+        margin-top: 40px;
+    }
+    
+    .widget-item p {
+        max-width: 100%;
+    }
+    
+    /* .email-input-container {
+        max-width: 100%;
+    } */
+}
+
+@media (max-width: 767px) {
+    .widget-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .quick-links li {
+        font-size: 16px;
+    }
+    
+    .social a {
+        padding: 8px 10px;
+        margin: 0 3px;
+    }
+}
+
+@media (max-width: 575px) {
+    .widget-item img {
+        margin-bottom: 20px;
+    }
+    
+    .post-date span {
+        font-size: 14px;
+    }
+    
+    .recent-post h6 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .email-input-container {
+        height: 2.75rem;
+    }
+    
+    .contact-btn {
+        width: 60px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 417px) {
+    .widget-area{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .post-date span {
+        font-size: 10px;
+    }
+    .recent-post h6{
+        font-size: 12px;
+    }
+}

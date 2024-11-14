@@ -1,0 +1,236 @@
+.testimonials-component{
+    background-color: var(--color-white);
+    padding: 40px 35px;
+    border-radius: 12px;
+    margin: 0 15px;
+    min-width: 270px;
+}
+.swiper-slide-active .testimonials-component{
+    position: relative;
+    background-color: var(--main-color);
+    transition: all 0.3s ease;
+}
+.swiper-slide-active .testimonials-component::after{
+    content: url('../../../public/assets/imgs/testimonialShape3_1.webp');
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.testi-rate{
+    width: 130px;
+}
+.testi-content p{
+    color: var(--text-light-color);
+    font-family: var(--title-font);
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+.swiper-slide-active .testi-content p{
+    color: var(--color-white);
+}
+.testi-author-info h4{
+    color: var(--color-black);
+    font-family: var(--title-font);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin-bottom: 1px;
+}
+.swiper-slide-active .testi-author-info h4{
+    color: var(--color-white);
+}
+.testi-author-info p{
+    color: var(--text-light-color);
+    font-family: var(--title-font);
+    line-height: 22px;
+}
+.swiper-slide-active .testi-author-info p{
+    color: var(--color-white);
+}
+.double-quote{
+    font-size: 55px;
+    color: var(--light-blue-border);
+}
+.swiper-slide-active .double-quote{
+    color: var(--color-white);
+}
+.testi-author-info img{
+    margin-top: -15px;
+}
+
+@media screen and (max-width: 1400px) {
+    .testimonials-component {
+        padding: 40px 35px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .testimonials-component {
+        padding: 35px 30px;
+    }
+    
+    .testi-author-info h4 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .double-quote {
+        font-size: 45px;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .testi-content {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .testimonials-component {
+        padding: 30px 25px;
+        margin: 0 10px;
+        min-height: 300px;
+    }
+    
+    .testi-rate {
+        width: 110px;
+        margin-bottom: 12px;
+    }
+    
+    .testi-content p {
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+    
+    .testi-author-img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials-component {
+        padding: 25px 20px;
+        margin: 0 8px;
+        min-height: 280px;
+    }
+    
+    .testi-author-info {
+        gap: 10px;
+    }
+    
+    .testi-author-info h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .testi-author-info p {
+        font-size: 14px;
+    }
+    
+    .testi-content p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .double-quote {
+        font-size: 40px;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .testi-author-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .testimonials-component {
+        padding: 20px 15px;
+        margin: 0 5px;
+        min-height: 260px;
+    }
+    
+    .testi-rate {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    
+    .testi-author-info {
+        gap: 8px;
+    }
+    
+    .testi-author-info h4 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .testi-author-info p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    .testi-content {
+        margin: 12px 0;
+    }
+    
+    .testi-content p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    
+    .double-quote {
+        font-size: 35px;
+        top: 12px;
+        right: 12px;
+    }
+    
+    .testi-author-img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .testimonials-component {
+        padding: 15px 12px;
+        margin: 0 4px;
+        min-height: 240px;
+    }
+    
+    .testi-rate {
+        width: 90px;
+        margin-bottom: 8px;
+    }
+    
+    .testi-author-info h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .testi-author-info p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .testi-content p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .double-quote {
+        font-size: 30px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .testi-author-img {
+        width: 40px;
+        height: 40px;
+    }
+}

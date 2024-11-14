@@ -1,0 +1,71 @@
+.tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid var(--light-blue-border);
+    border-radius: 30px;
+    
+}
+.tabs button{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-light-color);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.tabs button.active{
+    background-color: var(--main-color);
+    color: var(--color-white);
+}
+.plane-section .row.custom::after{
+    content: url('../../assets/imgs/pricingIcon1_2.svg');
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+}
+.plane-section .row.custom::before{
+    content: '  Save 25%';
+    position: absolute;
+    bottom: 50%;
+    right: -90%;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+@media (max-width: 768px) {
+    .pricing-img-1, .pricing-img-2{
+        display: none;
+    }
+    .plane-section .row.custom::after{
+        bottom: -80%;
+        left: 10%;
+    }
+    .plane-section .row.custom::before{
+        bottom: -50%;
+        right: 0%;
+    }
+}
+@media (max-width: 484px) {
+    .plane-section .row.custom::after{
+        width: 150px;
+        left: 2%;
+    }
+    .plane-section .row.custom::before{
+        right: 0%;
+    }
+    .plane-section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 375px) {
+    .plane-section{
+        padding-left: 0;
+        padding-right: 0;
+    }   
+}
